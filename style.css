@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif, Arial;
+    font-family: 'Poppins',sans-serif;
 }
 
 main {
@@ -80,7 +80,7 @@ main {
 .left .cards-container .main-card:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     /* Hover shadow effect */
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .img-div {
@@ -118,7 +118,7 @@ main {
 .cards-container span {
     font-weight: 200;
     font-size: 14px;
-    color: #626060;
+    color: #777575;
 }
 
 .img-div img {
@@ -141,7 +141,7 @@ main {
     background-color: #f1f1f1;
     /* letter-spacing: 1px; */
     /* color: white; */
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     /* Transition added */
     /* box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); */
 }
@@ -154,7 +154,7 @@ main {
 .main-card .stake-now:hover {
     background-color: #0563b0;
     /* Hover effect */
-    /* transform: scale(1.1); */
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -188,12 +188,13 @@ main {
 .card:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     /* Hover shadow effect */
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .card .stake-now:hover {
     cursor: pointer;
     background-color: #ddd7d7;
+    transform: scale(1.05);
 }
 
 .card .desc {
@@ -619,6 +620,11 @@ main {
 .staking-reward .details{
     display: flex;
     justify-content: space-between;
+}
+.staking-reward .details div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .staking-reward .details span{
     font-weight: 550;
