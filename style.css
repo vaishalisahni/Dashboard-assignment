@@ -408,6 +408,7 @@ main {
 .stacking-activ .main .foot {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: #626060;
     font-weight: 200;
     font-size: 14px;
@@ -420,7 +421,7 @@ main {
 }
 
 .stacking-activ .main .foot .btns button {
-    padding: 8px 16px;
+    padding: 10px 16px;
     border-radius: 4px;
     border: none;
     transition: transform 0.3s ease;
