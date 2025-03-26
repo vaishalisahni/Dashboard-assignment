@@ -10,11 +10,12 @@ main {
     flex-direction: row;
     /* height: 100vh; */
     width: 99vw;
-    max-width: 100vw;
+    max-width: 100%;
     margin: 0;
     /* max-width: 1080px; */
     background: linear-gradient(to right, #e2efff 40%, white);
     /* overflow: hidden; */
+    /* flex-wrap: wrap; */
 }
 
 .left {
@@ -27,6 +28,7 @@ main {
     width: 70%;
     padding: 15px;
     gap: 20px;
+    /* flex-wrap: wrap; */
 }
 
 .left .left-header {
@@ -65,7 +67,8 @@ main {
 
 .left .cards-container .main-card {
     height: 330px;
-    width: 280px;
+    /* width: 280px; */
+    width: 30%;
     display: flex;
     flex-direction: column;
     background: white;
@@ -75,6 +78,7 @@ main {
     justify-content: space-between;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap;
 }
 
 .left .cards-container .main-card:hover {
@@ -173,8 +177,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 330px;
-    /* width: 310px; */
+    /* width: 330px; */
+    width: 47%;
     height: 153px;
     background-color: white;
     border-radius: 8px;
@@ -183,6 +187,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Added shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap;
 }
 
 .card:hover {
@@ -226,6 +231,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap;
 }
 
 .rewards-container:hover {
@@ -237,6 +243,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    /* width: 20%; */
 }
 
 .reward p {
@@ -244,6 +251,7 @@ main {
     padding: 5px;
     border-radius: 3px;
     width: 200px;
+    /* width: 100%; */
     border: 1px solid #e8e2e2;
     transition: background-color 0.3s ease;
     /* Added transition */
@@ -453,7 +461,7 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1;
-    /* width: 600px; */
+    width: 30%;
     padding: 30px 10px;
     padding-left: 0;
     gap: 35px;
@@ -662,3 +670,154 @@ main {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     transform: scale(1.01);
 }
+/* @media (max-width: 1200px) {
+    .left {
+        width: 65%;
+    }
+    
+    .cards {
+        width: 65%;
+    }
+    
+    .card {
+        width: 100%;
+    }
+    
+    .reward p {
+        width: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .left, .right {
+        width: 100%;
+    }
+    
+    .right {
+        padding: 15px;
+    }
+    
+    .left .cards-container {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    
+    .cards {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .card {
+        width: 280px;
+    }
+    
+    .rewards-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .reward {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .reward p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .stacking {
+        display: none;
+    }
+    
+    .stacking-activ .main .head {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .stacking-activ .head form {
+        width: 100%;
+    }
+    
+    .stacking-activ .main {
+        height: auto;
+        gap: 30px;
+    }
+    
+    .stack {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .wallet .btns {
+        flex-direction: column;
+    }
+    
+    .staking-reward .details {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .left-header, .right-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .left-header .active, .right-header .active {
+        align-self: flex-end;
+    }
+    
+    .cards {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 100%;
+    }
+    
+    .stacking-activ .main form div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .stacking-activ .main form select {
+        width: 100%;
+    }
+    
+    .stacking-activ .main .foot {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .stacking-activ .main .foot .btns {
+        width: 100%;
+    }
+    
+    .wallet {
+        height: auto;
+        gap: 30px;
+    }
+    
+    .balance {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+} */
